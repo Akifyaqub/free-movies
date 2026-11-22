@@ -1,0 +1,34 @@
+name: Rename to index
+on:
+  workflow_dispatch:
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rename file
+        run: |
+          git mv free-movies.html index.html
+          git config user.name "Akifyaqub"
+          git config user.email "akifyaqub71@gmail.com"
+          git commit -m "Rename free-movies.html to index.html"
+          git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
