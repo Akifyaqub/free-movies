@@ -175,7 +175,7 @@
         position: absolute; inset: 0; z-index: -1;
         background: linear-gradient(100deg, rgba(12, 10, 7, 0.88) 0%, rgba(12, 10, 7, 0.72) 46%, rgba(12, 10, 7, 0.40) 100%);
       }
-      .hero h1, .hero h2.tagline, .hero p.lede { text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6); }
+      .hero h1 { text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6); }
       .hero h1 {
         font-family: "Bebas Neue", "Arial Narrow", sans-serif;
         font-size: clamp(38px, 6vw, 60px);
@@ -185,11 +185,6 @@
         font-weight: 400;
       }
       .hero h1 .thin { color: var(--accent); }
-      .hero h2.tagline {
-        font-size: clamp(19px, 3vw, 26px); font-weight: 700; line-height: 1.3;
-        margin: 0 0 10px; color: var(--hero-ink); max-width: 700px;
-      }
-      .hero p.lede { max-width: 640px; margin: 0 0 12px; color: var(--hero-soft); font-size: 16px; }
       .searchbar { display: flex; gap: 10px; max-width: 640px; }
       .searchbar input {
         flex: 1; min-width: 0;
@@ -478,8 +473,6 @@
     <header class="hero">
       <div class="wrap">
         <h1>Free <span class="thin">Movies</span></h1>
-        <h2 class="tagline">Watch free movies online — movies from 1990 to 2026, free to stream legally</h2>
-        <p class="lede">Every film here is from 1990 to 2026, collected from the Internet Archive — horror, comedy, sci-fi, drama and animation, each with its poster thumbnail and a direct watch link. No sign-up and no fees: just type a name, browse by genre and press play.</p>
         <div class="searchbar">
           <input id="search" type="search" placeholder="Search by name…" aria-label="Search movies" />
         </div>
