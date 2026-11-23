@@ -138,26 +138,12 @@
     }
     </script>
 
-    <!-- Google AdSense =====================================================
-         PLACEHOLDER publisher ID. To go live, replace ca-pub-XXXXXXXXXXXXXXXX
-         below (and in every data-ad-client attribute on this page) with your
-         real AdSense publisher ID, and replace the data-ad-slot values with
-         the ad unit IDs from your AdSense account. Until then the ad script
-         is not loaded and the slots show as marked ad spaces.
-    ====================================================================== -->
+    <!-- Google AdSense — site verification snippet (publisher ca-pub-3158503802009746) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3158503802009746"
+         crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-3158503802009746" />
     <script>
-      var ADSENSE_PUB_ID = "ca-pub-XXXXXXXXXXXXXXXX";
-      if (ADSENSE_PUB_ID.indexOf("XXXX") === -1) {
-        var adsMeta = document.createElement("meta");
-        adsMeta.name = "google-adsense-account";
-        adsMeta.content = ADSENSE_PUB_ID;
-        document.head.appendChild(adsMeta);
-        var adsScript = document.createElement("script");
-        adsScript.async = true;
-        adsScript.crossOrigin = "anonymous";
-        adsScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + ADSENSE_PUB_ID;
-        document.head.appendChild(adsScript);
-      }
+      var ADSENSE_PUB_ID = "ca-pub-3158503802009746";
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1422,9 +1408,8 @@
           return card;
       }
 
-      /* AdSense in-grid slot, inserted between movie cards. Uses the same
-         placeholder publisher ID as the header slot; swap ADSENSE_PUB_ID
-         and the data-ad-slot value to go live. */
+      /* AdSense in-grid slot, inserted between movie cards. Uses the
+         publisher ID from the head snippet (ADSENSE_PUB_ID). */
       function makeAdCard() {
         var d = document.createElement("div");
         d.className = "card ad-card";
